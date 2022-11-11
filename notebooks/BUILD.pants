@@ -1,0 +1,18 @@
+python_requirement(
+    name="requirements",
+    requirements=[
+        "jupyterlab",
+        "mlflow==1.26.1",
+        "scikit-learn",
+        "matplotlib",
+    ],
+)
+
+python_sources(
+    name="lab",
+    sources=["lab.py"],
+    dependencies=[
+        "//rikai_sklearn:sources"
+    ],
+)
+
