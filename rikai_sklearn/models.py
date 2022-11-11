@@ -56,8 +56,6 @@ class Classification(SklearnModelType):
 
     def predict(self, x, *args, **kwargs) -> dict:
         assert self.model is not None
-        print("predicting:")
-        print(x)
         return self.model.predict(x).tolist()
 
 
@@ -85,7 +83,6 @@ class DimensionalityReduction(SklearnModelType):
 
 MODEL_TYPES = {
     "random_forest_regression": Regression(),
-    "logistic_regression": Classification(),
     "random_forest_classification": Classification(),
     "pca": DimensionalityReduction(),
 }

@@ -6,7 +6,7 @@
 // {
 //   "version": 3,
 //   "valid_for_interpreter_constraints": [
-//     "CPython==3.8.14"
+//     "CPython<3.9,>=3.8"
 //   ],
 //   "generated_with_requirements": [
 //     "jupyterlab",
@@ -4017,7 +4017,7 @@
     "scikit-learn"
   ],
   "requires_python": [
-    "==3.8.14"
+    "<3.9,>=3.8"
   ],
   "resolver_version": "pip-2020-resolver",
   "style": "universal",
