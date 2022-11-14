@@ -2,9 +2,11 @@ import rikai
 from typing import Any, Optional
 
 def get_model_type(model):
-    p = model.__module__[len("sklearn."): -len("_classes")]
+    model_name = model.__module__[len("sklearn."):]
+    model_name = model_name.split(".")[0]
     name = model.__class__.__name__
-    return "rikai_sklearn." + p + name
+    return f"rikai_sklearn.{model_name}.{name}"
+
 
 def log_model(
     model: Any,
