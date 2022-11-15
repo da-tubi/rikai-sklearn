@@ -12,3 +12,7 @@
 | RandomForestRegressor | regression | | [Demo](notebooks/1.11.2%20RandomForestRegressor.ipynb) |
 | ExtraTreesClassifier | classification | | [Demo](notebooks/1.11.2%20ExtraTreesClassifier.ipynb) |
 | ExtraTreesRegressor | regression | | [Demo](notebooks/1.11.2%20ExtraTreesRegressor.ipynb) |
+| KMeans | | [Clustering](https://scikit-learn.org/1.1/modules/clustering.html#clustering) | |
+| SpectralClustering | | | |
+| PCA | | [Decomposing signals in components (matrix factorization problems)](https://scikit-learn.org/1.1/modules/decomposition.html#decomposing-signals-in-components-matrix-factorization-problems) | |
+
