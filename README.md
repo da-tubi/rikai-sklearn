@@ -10,5 +10,5 @@
 | SVR/NuSVR/LinearSVR | regression | | [Demo](notebooks/1.4.2%20SVR.ipynb) |
 | RandomForestClassifier | classification | [Forests of randomized trees](https://scikit-learn.org/1.1/modules/ensemble.html#forests-of-randomized-trees) | [Demo](notebooks/1.11.2%20RandomForestClassifier.ipynb) |
 | RandomForestRegressor | regression | | [Demo](notebooks/1.11.2%20RandomForestRegressor.ipynb) |
-| ExtraTreesClassifier | classification | | [Demo]() |
-| ExtraTreesRegressor | regression | | [Demo]() |
+| ExtraTreesClassifier | classification | | [Demo](notebooks/1.11.2%20ExtraTreesClassifier.ipynb) |
+| ExtraTreesRegressor | regression | | [Demo](notebooks/1.11.2%20ExtraTreesRegressor.ipynb) |
