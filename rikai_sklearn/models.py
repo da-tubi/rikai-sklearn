@@ -59,14 +59,6 @@ class Classification(SklearnModelType):
         return self.model.predict(x).tolist()
 
 
-class Regression(SklearnModelType):
-    def schema(self) -> str:
-        return "float"
-
-    def predict(self, x, *args, **kwargs) -> float:
-        assert self.model is not None
-        return self.model.predict(x).tolist()
-
 
 class DimensionalityReduction(SklearnModelType):
     """Dimensionality reduction models.
@@ -82,7 +74,6 @@ class DimensionalityReduction(SklearnModelType):
 
 
 MODEL_TYPES = {
-    "random_forest_regression": Regression(),
     "random_forest_classification": Classification(),
     "pca": DimensionalityReduction(),
 }
