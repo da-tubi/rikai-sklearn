@@ -1,12 +1,15 @@
 import rikai
 from typing import Any, Optional
 
-def get_model_type(model):
-    model_name = model.__module__[len("sklearn."):]
-    model_name = model_name.split(".")[0]
-    name = model.__class__.__name__
-    return f"rikai_sklearn.{model_name}.{name}"
 
+def get_model_type(model):
+    tpe = model._estimator_type
+    if tpe == "regressor":
+        return "rikai_sklearn.models.Regressor"
+    elif tpe == "classifier":
+        return "rikai_sklearn.models.Classifier"
+    else:
+        raise RuntimeError(f"Estimator type ({tpe}) not supported")
 
 def log_model(
     model: Any,
