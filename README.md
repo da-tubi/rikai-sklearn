@@ -1,4 +1,7 @@
 # rikai-sklearn
+## Try it now!
+Just clone this repo and then launch the JupyterLab via `bin/lab`.
+
 ## Supported Models
 | Model | Purpose | Doc | Notebooks |
 |-------|---------|-----|-----------|
@@ -12,7 +15,7 @@
 | RandomForestRegressor | regression | | [Demo](notebooks/1.11.2%20RandomForestRegressor.ipynb) |
 | ExtraTreesClassifier | classification | | [Demo](notebooks/1.11.2%20ExtraTreesClassifier.ipynb) |
 | ExtraTreesRegressor | regression | | [Demo](notebooks/1.11.2%20ExtraTreesRegressor.ipynb) |
-| KMeans | | [Clustering](https://scikit-learn.org/1.1/modules/clustering.html#clustering) | |
-| SpectralClustering | | | |
-| PCA | | [Decomposing signals in components (matrix factorization problems)](https://scikit-learn.org/1.1/modules/decomposition.html#decomposing-signals-in-components-matrix-factorization-problems) | |
+| KMeans | | [Clustering](https://scikit-learn.org/1.1/modules/clustering.html#clustering) | TODO |
+| SpectralClustering | | | TODO |
+| PCA | | [Decomposing signals in components (matrix factorization problems)](https://scikit-learn.org/1.1/modules/decomposition.html#decomposing-signals-in-components-matrix-factorization-problems) | TODO |
 
