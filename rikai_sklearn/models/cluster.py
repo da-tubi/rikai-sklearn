@@ -8,7 +8,7 @@ class Clustering(SklearnModelType):
     def schema(self) -> str:
         return "int"
 
-    def predict(self, x, *args, **kwargs) -> List:
+    def predict(self, x, *args, **kwargs) -> List[int]:
         assert self.model is not None
         return self.model.predict(x).tolist()
 
