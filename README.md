@@ -15,6 +15,5 @@ Just clone this repo and then launch the JupyterLab via `bin/lab`.
 | RandomForestRegressor | regression | | [Demo](notebooks/1.11.2%20RandomForestRegressor.ipynb) |
 | ExtraTreesClassifier | classification | | [Demo](notebooks/1.11.2%20ExtraTreesClassifier.ipynb) |
 | ExtraTreesRegressor | regression | | [Demo](notebooks/1.11.2%20ExtraTreesRegressor.ipynb) |
-| KMeans | | [Clustering](https://scikit-learn.org/1.1/modules/clustering.html#clustering) | TODO |
-| SpectralClustering | | | TODO |
+| KMeans | | [Clustering](https://scikit-learn.org/1.1/modules/clustering.html#k-means) | [Demo](notebooks/2.3.2%20KMeans.ipynb) |
 | PCA | | [Decomposing signals in components (matrix factorization problems)](https://scikit-learn.org/1.1/modules/decomposition.html#decomposing-signals-in-components-matrix-factorization-problems) | [Demo](notebooks/2.5.1%20PCA.ipynb) |
