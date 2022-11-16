@@ -6,5 +6,9 @@ python_requirement(
     ],
 )
 
-# See https://www.pantsbuild.org/docs/reference-python_sources for more info
-python_sources(name = "sources", sources=["**/*.py"])
+python_sources(name = "sources", sources=["**/*.py", "!*_test.py"])
+
+python_tests(
+    name="tests",
+    sources=["*_test.py"]
+)

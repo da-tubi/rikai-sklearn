@@ -1,13 +1,18 @@
 import rikai
 from typing import Any, Optional
+from sklearn.base import RegressorMixin, ClassifierMixin, TransformerMixin
 
 
 def _get_model_type(model):
-    tpe = model._estimator_type
-    if tpe not in ("regressor", "classifier"):
-        raise RuntimeError(f"Estimator type ({tpe}) not supported")
+    if isinstance(model, RegressorMixin):
+        return "rikai_sklearn.models.regressor"
+    elif isinstance(model, ClassifierMixin):
+        return "rikai_sklearn.models.classifier"
+    elif isinstance(model, TransformerMixin):
+        return "rikai_sklearn.models.transformer"
+    else:
+        raise RuntimeError(f"No corresponding ModelType yet")
 
-    return f"rikai_sklearn.models.{tpe}"
 
 def log_model(
     model: Any,
