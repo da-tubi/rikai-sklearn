@@ -9,7 +9,10 @@ def _get_model_type(model):
     elif isinstance(model, ClassifierMixin):
         return "rikai_sklearn.models.classifier"
     elif isinstance(model, ClusterMixin):
-        return "rikai_sklearn.models.cluster"
+        if 'predict' in dir(model):
+            return "rikai_sklearn.models.cluster"
+        else:
+            raise RuntimeError(f"Clustering without predict method is not supported")
     elif isinstance(model, TransformerMixin):
         return "rikai_sklearn.models.transformer"
     else:
