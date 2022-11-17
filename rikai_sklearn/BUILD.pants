@@ -3,20 +3,23 @@ python_requirement(
     name="requirements",
     requirements=[
         "rikai==0.1.14",
+        "scikit-learn",
     ],
+    resolve=parametrize("default", "lab"),
 )
 
-python_sources(name = "sources", sources=["**/*.py", "!*_test.py"])
-
-python_tests(
-    name="tests",
-    sources=["*_test.py"]
+python_sources(
+    name="sources",
+    sources=["**/*.py", "!*_test.py"],
+    resolve=parametrize("default", "lab"),
 )
+
+python_tests(name="tests", sources=["*_test.py"], resolve=parametrize("default", "lab"))
 
 python_distribution(
     name="rikai-sklearn",
     dependencies=[
-        "rikai_sklearn:sources",
+        "rikai_sklearn:sources@resolve=default",
     ],
     provides=python_artifact(
         name="rikai-sklearn",
