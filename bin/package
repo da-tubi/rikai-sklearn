@@ -1,0 +1,4 @@
+#!/bin/bash
+
+./pants package rikai_sklearn:rikai-sklearn
+
