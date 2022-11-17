@@ -1,8 +1,6 @@
 [GLOBAL]
 pants_version = "2.14.0"
 
-use_deprecated_pex_binary_run_semantics = false
-
 backend_packages.add = [
   "pants.backend.python",
 ]
