@@ -23,7 +23,7 @@ python_distribution(
     ],
     provides=python_artifact(
         name="rikai-sklearn",
-        version="0.1.0",
+        version="0.1.1",
         license="Apache License, Version 2.0",
     ),
     generate_setup=True,
