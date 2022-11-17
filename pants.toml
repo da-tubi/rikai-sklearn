@@ -14,3 +14,7 @@ root_patterns = ["/"]
 interpreter_constraints = [">=3.8, <3.9"]
 enable_resolves = true
 
+[python.resolves]
+  lab = "3rdparty/python/lab.lock"
+  default = "3rdparty/python/default.lock"
+
