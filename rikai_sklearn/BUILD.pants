@@ -12,3 +12,16 @@ python_tests(
     name="tests",
     sources=["*_test.py"]
 )
+
+python_distribution(
+    name="rikai-sklearn",
+    dependencies=[
+        "rikai_sklearn:sources",
+    ],
+    provides=python_artifact(
+        name="rikai-sklearn",
+        version="0.1.0",
+        license="Apache License, Version 2.0",
+    ),
+    generate_setup=True,
+)
