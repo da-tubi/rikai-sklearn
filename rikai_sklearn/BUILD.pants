@@ -14,7 +14,11 @@ python_sources(
     resolve=parametrize("default", "lab"),
 )
 
-python_tests(name="tests", sources=["*_test.py"], resolve=parametrize("default", "lab"))
+python_tests(name="tests",
+    sources=["*_test.py"],
+    resolve=parametrize("default", "lab"),
+    skip_mypy=True
+)
 
 python_distribution(
     name="rikai-sklearn",

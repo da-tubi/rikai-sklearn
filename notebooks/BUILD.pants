@@ -13,4 +13,5 @@ python_sources(
     sources=["lab.py"],
     dependencies=["//rikai_sklearn:sources"],
     resolve="lab",
+    skip_mypy=True
 )
