@@ -3,7 +3,7 @@ from typing import Any, Optional
 from sklearn.base import RegressorMixin, ClassifierMixin, TransformerMixin, ClusterMixin
 
 
-def _get_model_type(model):
+def _get_model_type(model: Any) -> str:
     if isinstance(model, RegressorMixin):
         return "rikai_sklearn.models.regressor"
     elif isinstance(model, ClassifierMixin):
@@ -26,8 +26,8 @@ def log_model(
     customized_flavor: Optional[str] = None,
     labels: Optional[dict] = None,
     artifact_path: str = "model",
-    **kwargs,
-):
+    **kwargs: Any,
+) -> None:
     model_type = _get_model_type(model)
     rikai.mlflow.sklearn.log_model(
         model,

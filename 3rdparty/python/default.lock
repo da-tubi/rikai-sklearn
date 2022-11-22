@@ -344,27 +344,53 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "637c9635fcf47945ceb91cd7f320234a7be540ded6f3e99a50cb6febdfd1ba8d",
-              "url": "https://files.pythonhosted.org/packages/b3/0e/836f12ec50075161e365131f13f5758451645af75c2becf61c6351ecec39/jedi-0.18.1-py2.py3-none-any.whl"
+              "hash": "203c1fd9d969ab8f2119ec0a3342e0b49910045abe6af0a3ae83a5764d54639e",
+              "url": "https://files.pythonhosted.org/packages/6d/60/4acda63286ef6023515eb914543ba36496b8929cb7af49ecce63afde09c6/jedi-0.18.2-py2.py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "74137626a64a99c8eb6ae5832d99b3bdd7d29a3850fe2aa80a4126b2a7d949ab",
-              "url": "https://files.pythonhosted.org/packages/c2/25/273288df952e07e3190446efbbb30b0e4871a0d63b4246475f3019d4f55e/jedi-0.18.1.tar.gz"
+              "hash": "bae794c30d07f6d910d32a7048af09b5a39ed740918da923c6b780790ebac612",
+              "url": "https://files.pythonhosted.org/packages/15/02/afd43c5066de05f6b3188f3aa74136a3289e6c30e7a45f351546cab0928c/jedi-0.18.2.tar.gz"
             }
           ],
           "project_name": "jedi",
           "requires_dists": [
             "Django<3.1; extra == \"testing\"",
+            "Jinja2==2.11.3; extra == \"docs\"",
+            "MarkupSafe==1.1.1; extra == \"docs\"",
+            "Pygments==2.8.1; extra == \"docs\"",
+            "alabaster==0.7.12; extra == \"docs\"",
+            "attrs; extra == \"testing\"",
+            "babel==2.9.1; extra == \"docs\"",
+            "chardet==4.0.0; extra == \"docs\"",
             "colorama; extra == \"testing\"",
+            "commonmark==0.8.1; extra == \"docs\"",
             "docopt; extra == \"testing\"",
+            "docutils==0.17.1; extra == \"docs\"",
             "flake8==3.8.3; extra == \"qa\"",
+            "future==0.18.2; extra == \"docs\"",
+            "idna==2.10; extra == \"docs\"",
+            "imagesize==1.2.0; extra == \"docs\"",
+            "mock==1.0.1; extra == \"docs\"",
             "mypy==0.782; extra == \"qa\"",
+            "packaging==20.9; extra == \"docs\"",
             "parso<0.9.0,>=0.8.0",
-            "pytest<7.0.0; extra == \"testing\""
+            "pyparsing==2.4.7; extra == \"docs\"",
+            "pytest<7.0.0; extra == \"testing\"",
+            "pytz==2021.1; extra == \"docs\"",
+            "readthedocs-sphinx-ext==2.1.4; extra == \"docs\"",
+            "recommonmark==0.5.0; extra == \"docs\"",
+            "requests==2.25.1; extra == \"docs\"",
+            "six==1.15.0; extra == \"docs\"",
+            "snowballstemmer==2.1.0; extra == \"docs\"",
+            "sphinx-rtd-theme==0.4.3; extra == \"docs\"",
+            "sphinx==1.8.5; extra == \"docs\"",
+            "sphinxcontrib-serializinghtml==1.1.4; extra == \"docs\"",
+            "sphinxcontrib-websupport==1.2.4; extra == \"docs\"",
+            "urllib3==1.26.4; extra == \"docs\""
           ],
           "requires_python": ">=3.6",
-          "version": "0.18.1"
+          "version": "0.18.2"
         },
         {
           "artifacts": [
@@ -1079,13 +1105,13 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "24becda58d49ceac4dc26232eb179ef2b21f133fecda7eed6018d341766ed76e",
-              "url": "https://files.pythonhosted.org/packages/03/22/784990e865d847384c28a05ff33ed09791251b320c212f957c62a11bd2ab/prompt_toolkit-3.0.32-py3-none-any.whl"
+              "hash": "ced598b222f6f4029c0800cefaa6a17373fb580cd093223003475ce32805c35b",
+              "url": "https://files.pythonhosted.org/packages/58/87/cac418cef18781a9081cb2075cc2cf08c77e0679c1f9b474587d71bbf777/prompt_toolkit-3.0.33-py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "e7f2129cba4ff3b3656bbdda0e74ee00d2f874a8bcdb9dd16f5fec7b3e173cae",
-              "url": "https://files.pythonhosted.org/packages/e2/d9/1009dbb3811fee624af34df9f460f92b51edac528af316eb5770f9fbd2e1/prompt_toolkit-3.0.32.tar.gz"
+              "hash": "535c29c31216c77302877d5120aef6c94ff573748a5b5ca5b1b1f76f5e700c73",
+              "url": "https://files.pythonhosted.org/packages/c4/6e/6ff7938f47981305a801a4c5b8d8ed282b58a28c01c394d43c1fbcfc810b/prompt_toolkit-3.0.33.tar.gz"
             }
           ],
           "project_name": "prompt-toolkit",
@@ -1093,7 +1119,7 @@
             "wcwidth"
           ],
           "requires_python": ">=3.6.2",
-          "version": "3.0.32"
+          "version": "3.0.33"
         },
         {
           "artifacts": [
@@ -1879,13 +1905,13 @@
           "artifacts": [
             {
               "algorithm": "sha256",
-              "hash": "d0b9a8433464d5800cbe05094acf5c6d52a91bfac9b52bcfc4d41382be5d5d31",
-              "url": "https://files.pythonhosted.org/packages/b6/40/353c051f77ee5618adaf1fd96f4f6bae9714ed0a22c7142c01c24eb77fe4/setuptools-65.5.1-py3-none-any.whl"
+              "hash": "6211d2f5eddad8757bd0484923ca7c0a6302ebc4ab32ea5e94357176e0ca0840",
+              "url": "https://files.pythonhosted.org/packages/1f/97/c03668380f278f1f8b0486d820c142cf224bba1bd78416e1797b52e0e81c/setuptools-65.6.0-py3-none-any.whl"
             },
             {
               "algorithm": "sha256",
-              "hash": "e197a19aa8ec9722928f2206f8de752def0e4c9fc6953527360d1c36d94ddb2f",
-              "url": "https://files.pythonhosted.org/packages/26/f4/ca5cb6df512f453ad50f78900bf7ec6a5491ee44bb49d0f6f76802dbdd43/setuptools-65.5.1.tar.gz"
+              "hash": "d1eebf881c6114e51df1664bc2c9133d022f78d12d5f4f665b9191f084e2862d",
+              "url": "https://files.pythonhosted.org/packages/09/b6/33512596fb92ba68f7c45e9bbc5e1bb9b24fbd941f9aece250fb420c2f5c/setuptools-65.6.0.tar.gz"
             }
           ],
           "project_name": "setuptools",
@@ -1936,7 +1962,7 @@
             "wheel; extra == \"testing-integration\""
           ],
           "requires_python": ">=3.7",
-          "version": "65.5.1"
+          "version": "65.6"
         },
         {
           "artifacts": [
