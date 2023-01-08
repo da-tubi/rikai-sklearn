@@ -1,3 +1,6 @@
+liga-sklearn is maintained as a subroject of Liga now:
+https://github.com/liga-ai/liga/tree/main/python/liga/sklearn
+
 # rikai-sklearn
 ## Try it now!
 Just clone this repo and then launch the JupyterLab via `bin/lab`.
